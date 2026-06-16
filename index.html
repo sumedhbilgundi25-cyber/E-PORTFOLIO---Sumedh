@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sumedh's Personal Portfolio - First-Year Engineering Student in Artificial Intelligence and Data Science (AIDS). Building intelligent solutions through code, creativity, and continuous learning.">
+    <meta name="author" content="Sumedh">
+    <title>Sumedh | AI & Data Science Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons for modern visuals -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Canvas for AI Background Effects -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header / Sticky Navigation Bar -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-area">
+                <span class="logo-fallback-icon"><i class="fa-solid fa-brain"></i></span>
+                <span class="nav-logo-text">Sumedh</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger-menu" id="hamburger-btn" aria-label="Toggle Menu" role="button" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="section-container hero-grid">
+            <div class="hero-content scroll-reveal-left">
+                <div class="greeting-badge">
+                    <span class="pulse-dot"></span>
+                    <span>Hello, I'm</span>
+                </div>
+                <h1 class="hero-title">Sumedh<span class="accent-dot">.</span></h1>
+                <h2 class="hero-subtitle">First-Year Engineering Student <span class="divider">|</span> <span class="gradient-text">AI & Data Science Enthusiast</span></h2>
+                <p class="hero-desc">
+                    Building intelligent solutions through code, creativity, and continuous learning. Passionate about machine learning, data structures, and crafting elegant software to solve real-world problems.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code-branch"></i> View Projects</a>
+                    <a href="#" class="btn btn-secondary"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+                </div>
+            </div>
+            
+            <!-- Terminal console block replacing profile photo -->
+            <div class="hero-terminal-wrapper scroll-reveal-right">
+                <div class="glass-card terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot-red"></span>
+                            <span class="dot-yellow"></span>
+                            <span class="dot-green"></span>
+                        </div>
+                        <span class="terminal-title">sumedh@aids-core:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line"><span class="terminal-prompt">$</span> cat student_info.json</div>
+                        <div class="terminal-output">
+{
+  <span class="json-key">"name"</span>: <span class="json-val">"Sumedh"</span>,
+  <span class="json-key">"role"</span>: <span class="json-val">"AIDS Student"</span>,
+  <span class="json-key">"academic_year"</span>: <span class="json-val">"1st Year B.E."</span>,
+  <span class="json-key">"nationality"</span>: <span class="json-val">"Indian"</span>,
+  <span class="json-key">"location"</span>: <span class="json-val">"India"</span>,
+  <span class="json-key">"status"</span>: <span class="json-val">"Active_Learning"</span>
+}</div>
+                        <div class="terminal-line"><span class="terminal-prompt">$</span> npm run initialize-core</div>
+                        <div class="terminal-output success-text"><i class="fa-solid fa-circle-check"></i> System modules loaded successfully.</div>
+                        <div class="terminal-line"><span class="terminal-prompt">$</span> <span class="cursor-blink">_</span></div>
+                    </div>
+                </div>
+                <!-- Neural floating accents -->
+                <div class="floating-tech-node node-1"><i class="fa-brands fa-python"></i></div>
+                <div class="floating-tech-node node-2"><i class="fa-solid fa-brain"></i></div>
+                <div class="floating-tech-node node-3"><i class="fa-solid fa-database"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <span class="section-subtitle">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text scroll-reveal-left">
+                    <p class="paragraph-lead">
+                        I am a highly motivated student pursuing my Bachelor of Engineering in <span class="highlight-text">Artificial Intelligence and Data Science (AIDS)</span>.
+                    </p>
+                    <p>
+                        My journey into technology is driven by a deep curiosity about how systems learn and evolve. I thrive on translating abstract problems into functional, logical solutions. Whether designing efficient algorithms, exploring complex datasets, or learning new programming paradigms, I am always seeking opportunities to grow.
+                    </p>
+                    <p>
+                        I believe in the power of innovation to shape the future. Beyond coding, I actively participate in tech discussions, follow developments in Generative AI, and constantly build mini-projects to reinforce my theoretical understanding.
+                    </p>
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <span class="stat-num">Indian</span>
+                            <span class="stat-label">Nationality</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">1st</span>
+                            <span class="stat-label">Year B.E. Student</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Commitment to Learn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards-wrapper scroll-reveal-right">
+                    <div class="glass-card about-feature-card">
+                        <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Artificial Intelligence</h3>
+                        <p>Fascinated by neural networks, natural language processing, and smart automation.</p>
+                    </div>
+                    <div class="glass-card about-feature-card">
+                        <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Data Science</h3>
+                        <p>Enjoying extracting knowledge and insights from raw structured or unstructured data.</p>
+                    </div>
+                    <div class="glass-card about-feature-card">
+                        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Software Engineering</h3>
+                        <p>Committed to writing clean, maintainable code using standard object-oriented design principles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <span class="section-subtitle">My Stack</span>
+                <h2 class="section-title">Skills & Capabilities</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="glass-card skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon-box python-color">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h3 class="skill-name">Python</h3>
+                    </div>
+                    <p class="skill-desc">Primary language for data manipulation, scripting, and machine learning models.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="glass-card skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon-box c-color">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="skill-name">C Programming</h3>
+                    </div>
+                    <p class="skill-desc">Understanding low-level concepts, memory management, and structured coding patterns.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="glass-card skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon-box html-color">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3 class="skill-name">HTML</h3>
+                    </div>
+                    <p class="skill-desc">Writing semantic, accessible, and structured templates for web layouts.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="glass-card skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon-box css-color">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h3 class="skill-name">CSS</h3>
+                    </div>
+                    <p class="skill-desc">Creating modern layouts using Grid, Flexbox, transitions, and customized animations.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="glass-card skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon-box js-color">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                    </div>
+                    <p class="skill-desc">Writing modular, asynchronous, client-side scripts to drive dynamic user interfaces.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 78%"></div>
+                    </div>
+                    <span class="skill-percentage">78%</span>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="glass-card skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon-box dsa-color">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h3 class="skill-name">Data Structures & Algos</h3>
+                    </div>
+                    <p class="skill-desc">Developing algorithmic efficiency through linked lists, trees, search, and sorting algorithms.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+
+                <!-- Skill 7 -->
+                <div class="glass-card skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon-box ai-color">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="skill-name">Artificial Intelligence</h3>
+                    </div>
+                    <p class="skill-desc">Studying logic networks, automated reasoning, heuristic search, and cognitive systems.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+
+                <!-- Skill 8 -->
+                <div class="glass-card skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon-box ds-color">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3 class="skill-name">Data Science</h3>
+                    </div>
+                    <p class="skill-desc">Familiarity with data cleanup, visual parsing, statistical models, and exploratory analysis.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 72%"></div>
+                    </div>
+                    <span class="skill-percentage">72%</span>
+                </div>
+
+                <!-- Skill 9 -->
+                <div class="glass-card skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon-box ps-color">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="skill-name">Problem Solving</h3>
+                    </div>
+                    <p class="skill-desc">Deconstructing layered system bugs into clear actionable steps and fixing core issues.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 82%"></div>
+                    </div>
+                    <span class="skill-percentage">82%</span>
+                </div>
+
+                <!-- Skill 10 -->
+                <div class="glass-card skill-card scroll-reveal">
+                    <div class="skill-header">
+                        <div class="skill-icon-box ml-color">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3 class="skill-name">Machine Learning Fundamentals</h3>
+                    </div>
+                    <p class="skill-desc">Understanding regression, classification, clustering, and weights training models.</p>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress" style="width: 68%"></div>
+                    </div>
+                    <span class="skill-percentage">68%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <span class="section-subtitle">Academic Path</span>
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="education-timeline-wrapper scroll-reveal">
+                <!-- Timeline Line -->
+                <div class="timeline-center-line"></div>
+                
+                <!-- Card 1 -->
+                <div class="timeline-item left-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="glass-card education-card">
+                        <span class="edu-duration">2025 - 2029 (Expected)</span>
+                        <h3 class="edu-degree">Bachelor of Engineering (B.E.)</h3>
+                        <h4 class="edu-dept">Artificial Intelligence and Data Science (AIDS)</h4>
+                        <div class="edu-meta">
+                            <span class="edu-college"><i class="fa-solid fa-school"></i> [Your College Name Placeholder]</span>
+                            <span class="edu-location"><i class="fa-solid fa-location-dot"></i> India</span>
+                        </div>
+                        <p class="edu-desc">
+                            Currently in my <strong>First Year</strong> of study. Deepening command in foundational mathematics, statistics, computer science basics, low-level C programming, and digital logic circuits.
+                        </p>
+                        <div class="edu-tags">
+                            <span>B.E. Degree</span>
+                            <span>First Year</span>
+                            <span>AIDS Department</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 (High School Foundation) -->
+                <div class="timeline-item right-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-school-flag"></i></div>
+                    <div class="glass-card education-card">
+                        <span class="edu-duration">Graduated 2025</span>
+                        <h3 class="edu-degree">Higher Secondary Education (Class XII)</h3>
+                        <h4 class="edu-dept">Science & Mathematics</h4>
+                        <div class="edu-meta">
+                            <span class="edu-college"><i class="fa-solid fa-school-circle-check"></i> Secondary School Placeholder</span>
+                            <span class="edu-location"><i class="fa-solid fa-location-dot"></i> India</span>
+                        </div>
+                        <p class="edu-desc">
+                            Completed advanced coursework in Physics, Chemistry, and Higher Mathematics. Initiated basic web programming and algorithm design.
+                        </p>
+                        <div class="edu-tags">
+                            <span>Science</span>
+                            <span>Mathematics</span>
+                            <span>Schooling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <span class="section-subtitle">What I've Built</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass-card project-card scroll-reveal">
+                    <div class="project-img-container">
+                        <!-- Simulated AI Grid Canvas Pattern placeholder inside container -->
+                        <div class="project-placeholder-visual chatbot-visual">
+                            <i class="fa-solid fa-robot"></i>
+                            <div class="visual-grid-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">AI Chatbot</h3>
+                        <p class="project-text">
+                            An interactive assistant utilizing natural language processing parameters. Parses query context, recognizes key intent patterns, and serves contextually relevant dynamic automated replies.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>NLP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="btn btn-icon"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#" class="btn btn-icon btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card scroll-reveal">
+                    <div class="project-img-container">
+                        <div class="project-placeholder-visual stats-visual">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <div class="visual-grid-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Student Performance Analyzer</h3>
+                        <p class="project-text">
+                            A diagnostic system built to parse academic data. Identifies trends in score variations, estimates final grade distributions, and isolates risk groups needing early support.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Data Science</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="btn btn-icon"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#" class="btn btn-icon btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card project-card scroll-reveal">
+                    <div class="project-img-container">
+                        <div class="project-placeholder-visual portfolio-visual">
+                            <i class="fa-solid fa-id-badge"></i>
+                            <div class="visual-grid-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-text">
+                            A production-ready responsive developer showcase. Outlines academic achievements, displays core tech expertise, and enables client contact, built using pure vanilla resources.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="btn btn-icon"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#" class="btn btn-icon btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <span class="section-subtitle">Reach Out</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info Cards -->
+                <div class="contact-info scroll-reveal-left">
+                    <h3 class="contact-prompt">Let's build something intelligent together!</h3>
+                    <p class="contact-info-desc">
+                        Whether you want to discuss AI trends, collaborate on projects, or just say hello, my inbox is always open.
+                    </p>
+
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-details">
+                                <span class="info-label">Email Me</span>
+                                <a href="mailto:sumedhbilgundi25@gmail.com" class="info-value">sumedhbilgundi25@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-details">
+                                <span class="info-label">Call Me</span>
+                                <a href="tel:9008960353" class="info-value">9008960353</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="info-details">
+                                <span class="info-label">Connect on LinkedIn</span>
+                                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="info-value">linkedin.com/in/yourusername</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="info-details">
+                                <span class="info-label">Follow on GitHub</span>
+                                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="info-value">github.com/yourusername</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-details">
+                                <span class="info-label">Nationality & Location</span>
+                                <span class="info-value">Indian | India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="glass-card contact-form-card scroll-reveal-right">
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="form-name" class="form-label">Name</label>
+                            <div class="input-wrapper">
+                                <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" id="form-name" class="form-control" placeholder="Your name" required>
+                            </div>
+                            <span class="error-msg" id="name-error">Name must be at least 2 characters.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email" class="form-label">Email</label>
+                            <div class="input-wrapper">
+                                <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <input type="email" id="form-email" class="form-control" placeholder="your.email@example.com" required>
+                            </div>
+                            <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message" class="form-label">Message</label>
+                            <div class="input-wrapper">
+                                <span class="input-icon message-icon"><i class="fa-solid fa-comment-dots"></i></span>
+                                <textarea id="form-message" class="form-control text-area" placeholder="Write your message here..." rows="5" required></textarea>
+                            </div>
+                            <span class="error-msg" id="message-error">Message must be at least 10 characters.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon-right"><i class="fa-solid fa-paper-plane"></i></span>
+                        </button>
+                        
+                        <div class="form-status-msg success" id="form-success">
+                            <i class="fa-solid fa-circle-check"></i> Message sent successfully! I will get back to you soon.
+                        </div>
+                        <div class="form-status-msg error" id="form-error">
+                            <i class="fa-solid fa-circle-exclamation"></i> Please fix the errors above before sending.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-area">
+        <div class="section-container footer-grid">
+            <div class="footer-info">
+                <a href="#home" class="logo-area">
+                    <span class="logo-fallback-icon"><i class="fa-solid fa-brain"></i></span>
+                    <span class="nav-logo-text">Sumedh</span>
+                </a>
+                <p class="footer-tagline">Building intelligent solutions through code, creativity, and continuous learning.</p>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:sumedhbilgundi25@gmail.com" class="social-icon-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sumedh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

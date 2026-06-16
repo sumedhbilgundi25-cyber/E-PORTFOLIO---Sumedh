@@ -1,0 +1,33 @@
+# Sumedh | Personal Portfolio Website
+
+A production-ready personal developer portfolio website designed with a modern, high-tech "Lite Paper Theme" inspired by Artificial Intelligence and Data Science. Built purely with semantic HTML5, responsive CSS3, and high-performance vanilla JavaScript.
+
+## Folder Structure
+
+```text
+portfolio/
+├── index.html
+├── style.css
+├── script.js
+└── README
+```
+
+## Features
+
+1. **Lite Paper Theme**: Warm grid-paper off-white styling using modern CSS variables with high-contrast slate text and electric blue & violet accents.
+2. **AI Interactive Console**: The Hero section contains an interactive console mock showing Sumedh's JSON profile structure, eliminating heavy photo loading.
+3. **HTML5 Canvas Animation**: Renders smooth 60fps moving particles, connection lines (neural network), and floating geometric structures (hexagons, triangles, diamonds) optimized for performance using `requestAnimationFrame`.
+4. **Responsive Navigation Spy**: Sticky header that resizes on scroll, changes active state depending on the viewport location, and features an accessible mobile drawer toggle.
+5. **Form Validation**: Clean error handling on contact fields with real-time feedback.
+
+## Setup & Deployment
+
+1. **Local View**: Double-click `index.html` or open it with any web browser to view the page. No build tools, framework installs, or npm servers required.
+2. **GitHub Pages / Vercel**: Directly push this directory to a GitHub repository or Vercel project. It is instantly deployable with zero-configuration.
+
+## Contact Credentials
+
+- **Email**: sumedhbilgundi25@gmail.com
+- **Phone**: +91 9008960353
+- **Nationality**: Indian
+- **Location**: India
