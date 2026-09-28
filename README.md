@@ -17,7 +17,7 @@ This portfolio showcases my journey as a First-Year Engineering student speciali
 - Project gallery
 - Contact form with client-side validation
 
-## Tech Stack
+##  Tech Stack
 
 - HTML5
 - CSS3
