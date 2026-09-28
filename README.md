@@ -8,7 +8,7 @@ This portfolio showcases my journey as a First-Year Engineering student speciali
 
 ## Features
 
-- Responsive design for mobile, tablet, and desktop
+- Responsive design for mobile, tablet, and desktop.
 - Dark futuristic theme with AI-inspired visuals
 - Smooth scrolling navigation
 - Animated sections and interactive elements
