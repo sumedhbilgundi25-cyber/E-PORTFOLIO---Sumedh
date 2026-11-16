@@ -8,7 +8,7 @@
    -------------------------------------------------------------------------- */
 :root {
     /* Lite Paper Theme Color Palette */
-    --bg-dark: #fafafa;         /* Clean paper white */
+    --bg-dark: #ffffff;         /* Clean paper white */
     --bg-darker: #f3f4f6;       /* Light gray panel backings */
     --bg-card: rgba(255, 255, 255, 0.7); /* Frosted white glass cards */
     
