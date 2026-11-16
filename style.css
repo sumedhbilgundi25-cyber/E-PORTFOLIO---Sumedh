@@ -8,8 +8,8 @@
    -------------------------------------------------------------------------- */
 :root {
     /* Lite Paper Theme Color Palette */
-    --bg-dark: black;         /* Clean paper white */
-    --bg-darker: #f3f4f6;       /* Light gray panel backings */
+    --bg-dark: #000000; /* Black background */;         
+    --bg-darker: #1a1a1a;       /* Light gray panel backings */
     --bg-card: rgba(255, 255, 255, 0.7); /* Frosted white glass cards */
     
     /* Accents */
